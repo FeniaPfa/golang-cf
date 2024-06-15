@@ -7,9 +7,11 @@ type Animal interface {
 	Sleep()
 }
 // to be type interface must implement all the methods with the same names and params
+// A type implements an interface by implementing its methods
 type Dog struct {
 	Name string
 }
+
 
 func (self Dog) Eat(){
 	fmt.Println("Dog is eating")
@@ -23,6 +25,11 @@ func (self Dog) Sleep(){
 		animal.Sleep()
 	}
 
+	func showVar(object interface{}){
+		fmt.Printf("The value is %v\n", object)
+
+	}
+
 func main() {
 
 	myDog := Dog{Name: "Dogg"}
@@ -30,5 +37,7 @@ func main() {
 	fmt.Println(myDog)
 
 	execAction(myDog)
+
+	showVar("String")
 
 }

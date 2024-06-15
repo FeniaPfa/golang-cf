@@ -45,7 +45,7 @@ fmt.Println(nombre3, apellido, pais, edad2, altura2)
 
 
 
-
+fmt.Println("Hola") 
 
 
 }
