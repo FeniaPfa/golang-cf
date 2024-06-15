@@ -33,7 +33,7 @@ func main() {
 	users[3] = "User 4"
 
 	fmt.Println(users)
-
+	
 	for key, value := range users{
 		fmt.Println(key, value)
 	}
@@ -41,5 +41,8 @@ func main() {
 	// 1 User 2
 	// 2 User 3
 	// 3 User 4
+
+
+
 
 }
